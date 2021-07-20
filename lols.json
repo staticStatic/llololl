@@ -1,0 +1,42 @@
+{
+  "LE": [
+  {
+    "l": {
+      "message": "{{ }}",
+      "chill": -0.4,
+      "bpm": 120
+    },
+    "o": {
+      "name": "flashText"
+    }
+  },
+  {
+    "l": {
+      "message": "( )",
+      "chill": 0.1,
+      "bpm": 80
+    },
+    "o": [{
+      "name": "pulseText",
+      "type": "bizText",
+      "accuracy": 80
+    },{
+      "name": "marginChange",
+      "type": "layoutMess",
+      "accuracy": 80
+    }],
+    "transform": {
+      "name": "linearToLogarithmic",
+      "inputs": ["chill", "bpm"]
+    }
+  }],
+  "SH": [{
+    "l": {
+      "message": "+🦠"
+    },
+    "o": {
+      "name": "flashText"
+    },
+    "transform": false
+  }]
+}
